@@ -1,0 +1,165 @@
+# Example YAML to get you started quickly.
+# Be aware that YAML has indentation based scoping.
+# Code completion support is available so start typing for available options.
+swagger: '2.0'
+
+# This is your document metadata
+info:
+  version: "0.0.0"
+  title: Airline
+
+# Describe your paths here
+paths:
+  # This is a path endpoint. Change it.
+  /:
+    # This is a HTTP operation
+    get:
+      # Check connectivity
+      description: |
+        Returns connect message
+      # This is array of GET operation parameters:
+      
+      # Expected responses for this operation:
+      responses:
+        # Response code
+        200:
+          description: Successful response
+  /airports:
+    get:
+      summary: Returns all airports
+      description: Return an array of all airport records
+      produces:
+        - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            type: array
+            items:
+               $ref: '#/definitions/Airport'
+      
+  /airports/airport-code/{airportId}:
+    get:
+      summary: Returns all airports with specific airport code 
+      description: Return an array of all airport records matching airportId. 
+      produces:
+        - application/json
+      parameters:
+        - name: airportId
+          in: path
+          description: Airport code of the airport to fetch
+          required: true
+          type: string
+      responses:
+        200:
+          description: successful operation
+          schema:
+            type: array
+            items:
+               $ref: '#/definitions/Airport'
+               
+  /airports/country-code/{countryId}:
+    get:
+      summary: Returns all airports with specific country code 
+      description: Return an array of all airport with a matching countryId. 
+      produces:
+        - application/json
+      parameters:
+        - name: countryId
+          in: path
+          description: Country code of the airport to fetch
+          required: true
+          type: string
+        - name: dom
+          in: query
+          description: Filter is domestic airport true or false
+          required: false
+          type: boolean
+        - name: int
+          in: query
+          description: Filter is international airport true or false
+          required: false
+          type: boolean
+      responses:
+        200:
+          description: successful operation
+          schema:
+            type: array
+            items:
+               $ref: '#/definitions/Airport'
+
+  /airports/country-code/{countryId}/airport/{airportId}:
+    get:
+      summary: Returns all airports with specific country & airport code 
+      description: Return an array of all airports with a matching countryId & airportId. 
+      produces:
+        - application/json
+      parameters:
+        - name: countryId
+          in: path
+          description: Country code of the airport to fetch
+          required: true
+          type: string
+        - name: airportId
+          in: path
+          description: Airport code of the airport to fetch
+          required: true
+          type: string
+        - name: dom
+          in: query
+          description: Filter is domestic airport true or false
+          required: false
+          type: boolean
+        - name: int
+          in: query
+          description: Filter is international airport true or false
+          required: false
+          type: boolean
+
+      responses:
+        200:
+          description: successful operation
+          schema:
+            type: array
+            items:
+               $ref: '#/definitions/Airport'
+################################################################################
+#                                 Definitions                                  #
+################################################################################
+
+definitions:
+  Airport:
+    type: object
+    properties: 
+      code:
+        type: string
+      display_name:
+        type: string
+      international_airport:
+        type: boolean
+      regional_airport:
+        type: boolean
+      location:
+        $ref: '#/definitions/Location'
+      currency_code:
+        type: string
+      timezone:
+        type: string
+      country:
+        $ref: '#/definitions/Country'
+  
+  Location:
+    type: object
+    properties:
+      longitude: 
+        type: string
+      latitude: 
+        type: string
+  
+  Country:
+    type: object
+    properties:
+      code:
+        type: string
+      display_name:
+        type: string      

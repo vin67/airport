@@ -1,0 +1,79 @@
+{"level":"info","message":"in function /","timestamp":"2017-02-05T20:07:50.834Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:07:50 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:07:50.842Z"}
+{"level":"info","message":"in function /airports","timestamp":"2017-02-05T20:07:50.861Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:07:52 +0000] \"GET /airports HTTP/1.1\" 200 1781371 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:07:52.559Z"}
+{"level":"info","message":"in function /air/country-code/:countryId","timestamp":"2017-02-05T20:07:52.609Z"}
+{"level":"info","message":"filters - airportIsDomestic : undefined, airportIsInternational: undefined ","timestamp":"2017-02-05T20:07:52.610Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:07:54 +0000] \"GET /airports/country-code/BE HTTP/1.1\" 200 1732 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:07:54.576Z"}
+{"level":"info","message":"in function /airports/country-code/:countryId/:airport-code/:airportId","timestamp":"2017-02-05T20:07:54.579Z"}
+{"level":"info","message":"filters - airportIsDomestic : undefined, airportIsInternational: undefined ","timestamp":"2017-02-05T20:07:54.579Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:07:56 +0000] \"GET /airports/country-code/FR/airport-code/CDG HTTP/1.1\" 200 270 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:07:56.555Z"}
+{"level":"info","message":"in function /airports/country-code/:countryId/:airport-code/:airportId","timestamp":"2017-02-05T20:07:56.560Z"}
+{"level":"info","message":"filters - airportIsDomestic : undefined, airportIsInternational: undefined ","timestamp":"2017-02-05T20:07:56.560Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:07:58 +0000] \"GET /airports/country-code/UK/airport-code/CDG HTTP/1.1\" 200 14 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:07:58.085Z"}
+{"level":"info","message":"in function /air/country-code/:countryId","timestamp":"2017-02-05T20:07:58.090Z"}
+{"level":"info","message":"filters - airportIsDomestic : false, airportIsInternational: true ","timestamp":"2017-02-05T20:07:58.090Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:07:59 +0000] \"GET /airports/country-code/FR?dom=false&int=true HTTP/1.1\" 200 518 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:07:59.580Z"}
+{"level":"info","message":"in function /airports/country-code/:countryId/:airport-code/:airportId","timestamp":"2017-02-05T20:07:59.583Z"}
+{"level":"info","message":"filters - airportIsDomestic : false, airportIsInternational: undefined ","timestamp":"2017-02-05T20:07:59.583Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:08:01 +0000] \"GET /airports/country-code/FR/airport-code/CDG?dom=false HTTP/1.1\" 200 270 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:08:01.148Z"}
+{"level":"info","message":"in function /airports/country-code/:countryId/:airport-code/:airportId","timestamp":"2017-02-05T20:08:01.152Z"}
+{"level":"info","message":"filters - airportIsDomestic : undefined, airportIsInternational: false ","timestamp":"2017-02-05T20:08:01.153Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:08:03 +0000] \"GET /airports/country-code/FR/airport-code/CDG?int=false HTTP/1.1\" 200 14 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:08:03.230Z"}
+{"level":"info","message":"in function /airports/country-code/:countryId/:airport-code/:airportId","timestamp":"2017-02-05T20:08:03.232Z"}
+{"level":"info","message":"filters - airportIsDomestic : true, airportIsInternational: undefined ","timestamp":"2017-02-05T20:08:03.232Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:08:04 +0000] \"GET /airports/country-code/FR/airport-code/CDG?dom=true HTTP/1.1\" 200 14 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:08:04.803Z"}
+{"level":"info","message":"in function /airports/country-code/:countryId/:airport-code/:airportId","timestamp":"2017-02-05T20:08:04.806Z"}
+{"level":"info","message":"filters - airportIsDomestic : undefined, airportIsInternational: true ","timestamp":"2017-02-05T20:08:04.806Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:08:06 +0000] \"GET /airports/country-code/FR/airport-code/CDG?int=true HTTP/1.1\" 200 270 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:08:06.779Z"}
+{"level":"info","message":"in function /airports/country-code/:countryId/:airport-code/:airportId","timestamp":"2017-02-05T20:08:06.783Z"}
+{"level":"info","message":"filters - airportIsDomestic : undefined, airportIsInternational: true ","timestamp":"2017-02-05T20:08:06.783Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:08:08 +0000] \"GET /airports/country-code/FR/airport-code/CDG?int=true HTTP/1.1\" 200 270 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:08:08.581Z"}
+{"level":"info","message":"in function /airports/country-code/:countryId/:airport-code/:airportId","timestamp":"2017-02-05T20:08:08.585Z"}
+{"level":"info","message":"filters - airportIsDomestic : false, airportIsInternational: false ","timestamp":"2017-02-05T20:08:08.585Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:08:10 +0000] \"GET /airports/country-code/VE/airport-code/CBS?dom=false&int=false HTTP/1.1\" 200 263 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:08:10.145Z"}
+{"level":"info","message":"in function /airports/country-code/:countryId/:airport-code/:airportId","timestamp":"2017-02-05T20:08:10.149Z"}
+{"level":"info","message":"filters - airportIsDomestic : undefined, airportIsInternational: false ","timestamp":"2017-02-05T20:08:10.149Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:08:11 +0000] \"GET /airports/country-code/VE/airport-code/CBS?dom=blah&int=false HTTP/1.1\" 200 263 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:08:11.740Z"}
+{"level":"info","message":"in function /","timestamp":"2017-02-05T20:15:57.411Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:15:57 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:15:57.418Z"}
+{"level":"info","message":"in function /airports","timestamp":"2017-02-05T20:15:57.434Z"}
+{"level":"info","message":"in function /air/country-code/:countryId","timestamp":"2017-02-05T20:16:07.435Z"}
+{"level":"info","message":"filters - airportIsDomestic : undefined, airportIsInternational: undefined ","timestamp":"2017-02-05T20:16:07.435Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:16:10 +0000] \"GET /airports HTTP/1.1\" 200 1781371 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:16:10.100Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:16:16 +0000] \"GET /airports/country-code/BE HTTP/1.1\" 200 1732 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:16:16.275Z"}
+{"level":"info","message":"in function /airports/country-code/:countryId/:airport-code/:airportId","timestamp":"2017-02-05T20:16:16.280Z"}
+{"level":"info","message":"filters - airportIsDomestic : undefined, airportIsInternational: undefined ","timestamp":"2017-02-05T20:16:16.280Z"}
+{"level":"info","message":"in function /airports/country-code/:countryId/:airport-code/:airportId","timestamp":"2017-02-05T20:16:26.285Z"}
+{"level":"info","message":"filters - airportIsDomestic : undefined, airportIsInternational: undefined ","timestamp":"2017-02-05T20:16:26.285Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:16:26 +0000] \"GET /airports/country-code/FR/airport-code/CDG HTTP/1.1\" 200 270 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:16:26.962Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:16:30 +0000] \"GET /airports/country-code/UK/airport-code/CDG HTTP/1.1\" 200 14 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:16:30.907Z"}
+{"level":"info","message":"in function /air/country-code/:countryId","timestamp":"2017-02-05T20:16:30.913Z"}
+{"level":"info","message":"filters - airportIsDomestic : false, airportIsInternational: true ","timestamp":"2017-02-05T20:16:30.914Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:16:33 +0000] \"GET /airports/country-code/FR?dom=false&int=true HTTP/1.1\" 200 518 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:16:33.208Z"}
+{"level":"info","message":"in function /airports/country-code/:countryId/:airport-code/:airportId","timestamp":"2017-02-05T20:16:33.213Z"}
+{"level":"info","message":"filters - airportIsDomestic : false, airportIsInternational: undefined ","timestamp":"2017-02-05T20:16:33.213Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:16:38 +0000] \"GET /airports/country-code/FR/airport-code/CDG?dom=false HTTP/1.1\" 200 270 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:16:38.265Z"}
+{"level":"info","message":"in function /airports/country-code/:countryId/:airport-code/:airportId","timestamp":"2017-02-05T20:16:38.271Z"}
+{"level":"info","message":"filters - airportIsDomestic : undefined, airportIsInternational: false ","timestamp":"2017-02-05T20:16:38.271Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:16:44 +0000] \"GET /airports/country-code/FR/airport-code/CDG?int=false HTTP/1.1\" 200 14 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:16:44.347Z"}
+{"level":"info","message":"in function /airports/country-code/:countryId/:airport-code/:airportId","timestamp":"2017-02-05T20:16:44.351Z"}
+{"level":"info","message":"filters - airportIsDomestic : true, airportIsInternational: undefined ","timestamp":"2017-02-05T20:16:44.352Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:16:51 +0000] \"GET /airports/country-code/FR/airport-code/CDG?dom=true HTTP/1.1\" 200 14 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:16:51.299Z"}
+{"level":"info","message":"in function /airports/country-code/:countryId/:airport-code/:airportId","timestamp":"2017-02-05T20:16:51.303Z"}
+{"level":"info","message":"filters - airportIsDomestic : undefined, airportIsInternational: true ","timestamp":"2017-02-05T20:16:51.303Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:16:58 +0000] \"GET /airports/country-code/FR/airport-code/CDG?int=true HTTP/1.1\" 200 270 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:16:58.680Z"}
+{"level":"info","message":"in function /airports/country-code/:countryId/:airport-code/:airportId","timestamp":"2017-02-05T20:16:58.685Z"}
+{"level":"info","message":"filters - airportIsDomestic : undefined, airportIsInternational: true ","timestamp":"2017-02-05T20:16:58.685Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:17:08 +0000] \"GET /airports/country-code/FR/airport-code/CDG?int=true HTTP/1.1\" 200 270 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:17:08.537Z"}
+{"level":"info","message":"in function /airports/country-code/:countryId/:airport-code/:airportId","timestamp":"2017-02-05T20:17:08.541Z"}
+{"level":"info","message":"filters - airportIsDomestic : false, airportIsInternational: false ","timestamp":"2017-02-05T20:17:08.541Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:17:18 +0000] \"GET /airports/country-code/VE/airport-code/CBS?dom=false&int=false HTTP/1.1\" 200 263 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:17:18.532Z"}
+{"level":"info","message":"in function /airports/country-code/:countryId/:airport-code/:airportId","timestamp":"2017-02-05T20:17:18.538Z"}
+{"level":"info","message":"filters - airportIsDomestic : undefined, airportIsInternational: false ","timestamp":"2017-02-05T20:17:18.538Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Feb/2017:20:17:20 +0000] \"GET /airports/country-code/VE/airport-code/CBS?dom=blah&int=false HTTP/1.1\" 200 263 \"-\" \"node-superagent/2.3.0\"\n","timestamp":"2017-02-05T20:17:20.760Z"}
+{"level":"info","message":"in function /airports","timestamp":"2017-02-05T20:27:41.759Z"}
+{"level":"info","message":"::1 - - [05/Feb/2017:20:27:44 +0000] \"GET /airports HTTP/1.1\" 200 1781371 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36\"\n","timestamp":"2017-02-05T20:27:44.195Z"}
+{"level":"info","message":"in function /airports/country-code/:countryId/:airport-code/:airportId","timestamp":"2017-02-05T20:28:25.822Z"}
+{"level":"info","message":"filters - airportIsDomestic : undefined, airportIsInternational: undefined ","timestamp":"2017-02-05T20:28:25.822Z"}
+{"level":"info","message":"::1 - - [05/Feb/2017:20:28:27 +0000] \"GET /airports/country-code/UK/airport-code/CDG HTTP/1.1\" 200 14 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36\"\n","timestamp":"2017-02-05T20:28:27.922Z"}
